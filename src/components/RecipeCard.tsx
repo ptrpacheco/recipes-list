@@ -44,7 +44,6 @@ export function RecipeCard({ recipe, forcedCategory, forcedArea }: RecipeCardPro
         />
 
         <View className="flex-col gap-2 p-4">
-
           <Text className="text-xl font-bold text-gray-800" numberOfLines={1} ellipsizeMode="tail">
             {recipe.strMeal}
           </Text>

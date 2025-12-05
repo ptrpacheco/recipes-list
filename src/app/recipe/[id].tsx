@@ -6,7 +6,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { getRecipeDetails } from '@/services/api';
 import { LinearGradient } from 'expo-linear-gradient';
 import Line from '@/components/Line';
-import SecundaryButton from '@/components/buttons/SecundaryButton';
 import PrimaryButton from '@/components/buttons/PrimaryButton';
 
 export default function RecipeDetailScreen() {

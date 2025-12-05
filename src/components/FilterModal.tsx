@@ -4,7 +4,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { useQuery } from '@tanstack/react-query';
 import { getAreasList, getCategoriesList } from '@/services/api';
 import PrimaryButton from './buttons/PrimaryButton';
-import SecundaryButton from './buttons/SecundaryButton';
 
 type FilterType = { type: 'category' | 'area'; value: string } | null;
 
@@ -49,7 +48,9 @@ export function FilterModal({ visible, onClose, onApply, currentFilter }: Filter
       <View className="flex-1 justify-end bg-black/50">
         <View className="flex h-[70%] w-full overflow-hidden rounded-t-3xl bg-white">
           <View className="flex-row items-center justify-between border-b border-gray-100 p-6">
-            <Text onPress={handleClear} className="font-medium text-orange-500">Limpar</Text>
+            <Text onPress={handleClear} className="font-medium text-orange-500">
+              Limpar
+            </Text>
             <Text className="text-lg font-bold text-gray-800">Filtrar Receitas</Text>
             <Pressable onPress={onClose}>
               <Ionicons name="close" size={24} color="#374151" />

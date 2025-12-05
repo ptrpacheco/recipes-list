@@ -39,7 +39,7 @@ export default function PrimaryButton({
         onPress={onPress}
         onPressIn={handlePressIn}
         onPressOut={handlePressOut}
-        className={`h-12 w-12 flex-row gap-2 items-center justify-center rounded-full bg-orange-500 shadow-md shadow-orange-500 ${classname}`}>
+        className={`h-12 w-12 flex-row items-center justify-center gap-2 rounded-full bg-orange-500 shadow-md shadow-orange-500 ${classname}`}>
         {children}
       </Pressable>
     </Animated.View>
